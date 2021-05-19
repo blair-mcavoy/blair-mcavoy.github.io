@@ -9,13 +9,14 @@ header {
  display: none; 
  padding: 10px;
  background: grey;
- cursor: pointer;
+ overflow: hidden;
 }
 
 
 .unit{
   background: white;
   padding: 10px;
+  cursor: pointer;
 }
 .unit:hover {
   background-color: #ccc;

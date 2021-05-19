@@ -12,14 +12,14 @@ iframe{
 
 body {
   background: white;
+  font: font-family: "Nunito Sans", serif;
 
 }
 
 p {
   color: black;
   font-size: 25;
-  
-
+  text-align: left
 
 }
 h1 {
@@ -80,4 +80,7 @@ h1 {
   background-color: #4CAF50;
   color: white;
 }
+
+
+
 

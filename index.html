@@ -19,7 +19,7 @@
       <div class="side">
         <h2>Units</h2>
         <ol>
-          <li id="unit1" hover='document.getElementById("unit1").innerHTML = "Hello JavaScript!"'>Primitive Types</li>
+          <li id="unit1" onmouseover="changeText('unit1','Explore basic data types, syntax, and expressions in Java.')" onmouseout="changeText('unit1','Primitive Types')">Primitive Types</li>
           <li id="unit2">Using Objects</li>
           <li>Boolean Expressions and if Statements</li>
           <li>Iteration</li>
@@ -47,8 +47,15 @@
         </ul> 
       
       </div>
-     
-
     </div>
+    <script>
+    function changeText(id,text)
+        {
+            var display = document.getElementById(id);
+            display.innerHTML = "";
+            display.innerHTML = text;
+        }
+          
+    </script>
   </body>
 </html>

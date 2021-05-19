@@ -2,7 +2,7 @@ header {
   background: #F4E285;
   text-align: center;
   padding: 20px;
-  font-family:monospace
+  font-family:monospace;
 }
 
 .collapse{
@@ -13,12 +13,13 @@ header {
 
 .button {
   border: none;
+  font-family:monospace;
   background: white;
   padding: 2px;
   text-align: center;
   display: inline-block;
   font-size: 12px;
-  margin: 2px;
+  margin: 10px;
   cursor: pointer;
 }
 

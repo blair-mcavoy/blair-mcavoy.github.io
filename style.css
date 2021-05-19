@@ -11,6 +11,16 @@ header {
  background: #EFEFED;
 }
 
+.button {
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 126px;
+  margin: 2px;
+  cursor: pointer;
+}
 
 .unit{
   background: white;

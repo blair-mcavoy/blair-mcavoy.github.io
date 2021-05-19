@@ -8,6 +8,7 @@ header {
 .collapse{
  display: none; 
  padding: 10px;
+ background: grey;
 }
 
 .unit{

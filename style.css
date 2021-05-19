@@ -13,11 +13,11 @@ header {
 
 .button {
   border: none;
-  color: white;
+  background: white;
   padding: 15px;
   text-align: center;
   display: inline-block;
-  font-size: 126px;
+  font-size: 12px;
   margin: 2px;
   cursor: pointer;
 }

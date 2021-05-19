@@ -5,6 +5,10 @@ header {
   font-family:monospace
 }
 
+.collapse{
+ display: none; 
+}
+
 iframe{
   float:left;
   margin: 30px;

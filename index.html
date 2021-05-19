@@ -13,7 +13,7 @@
   </head>
   
   <body>
-    <header><h1>AP Computer Science A</h1></header>
+    <header><h1>AP Computer Science A</h1><button type="button" onclick="changeFontSize();">Change font size</button></header>
     
     <div class="row">
       <div class="side">
@@ -161,15 +161,30 @@
     </div>
     <script>
     function toggle(elementId) {
-    var ele = document.getElementById(elementId);
-    if(ele.style.display == "block") {
-            ele.style.display = "none";
-    }
-    else {
+      var ele = document.getElementById(elementId);
+      if(ele.style.display == "block") {
+         ele.style.display = "none";
+      }
+      else {
         ele.style.display = "block";
+      }
     }
-} 
-          
+    var fontSizeIsLarge = false;
+    function changeFontSize(){
+      //var ele = document.getElementById('demo');
+      if(!fontSizeIsLarge){
+        //ele.style.fontSize = "150%";
+        document.body.fontSize= "150%";
+        fontSizeIsLarge = true;
+      }
+      else{
+        //ele.style.fontSize = "100%";
+        document.body.fontSize= "150%";
+        fontSizeIsLarge = false;
+      }  
+    }
+      
+      
     </script>
   </body>
 </html>

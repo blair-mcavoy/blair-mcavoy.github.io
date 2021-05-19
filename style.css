@@ -17,6 +17,7 @@ header {
   background: white;
   padding: 10px;
   cursor: pointer;
+  border: 1px solid #ccc;
 }
 .unit:hover {
   background-color: #ccc;

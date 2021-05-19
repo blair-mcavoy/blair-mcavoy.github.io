@@ -8,7 +8,7 @@ header {
 .collapse{
  display: none; 
  padding: 0 10px;
- background: grey;
+ background: #EFEFED;
 }
 
 
@@ -16,10 +16,10 @@ header {
   background: white;
   padding: 10px;
   cursor: pointer;
-  border: 1px solid #ccc;
+  border: 1px solid #DFDFDF;
 }
 .unit:hover {
-  background-color: #ccc;
+  background-color: #DFDFDF;
 }
 
 iframe{

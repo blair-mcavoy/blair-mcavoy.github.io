@@ -134,7 +134,7 @@
             </div>
         
           <div class="unit" onclick="toggle('unit10expand')">Recursion</div>
-            <div id="unit1expand" class="collapse">Understand the concept of recursion and how it can be used as an alternative approach to common algorithms.
+            <div id="unit10expand" class="collapse">Understand the concept of recursion and how it can be used as an alternative approach to common algorithms.
               <ul>
                 <li>Recursion</li>
                 <li> Recursive Searching and Sorting</li>
@@ -145,7 +145,7 @@
       
       <div class="main">  <!--used to display a web page within a web page-->
         <h2>Course Overview</h2>
-        <p>Go deep into the concepts and tools of object-oriented programming as you learn the Java programming language. You'll do hands-on work to design, write, and test computer programs that solve problems or accomplish tasks. You’ll learn how to design a program, develop the algorithms it needs, and write code to implement them. You will test program code, correct errors, and document and explain how your code works. </p>
+        <p id="demo">Go deep into the concepts and tools of object-oriented programming as you learn the Java programming language. You'll do hands-on work to design, write, and test computer programs that solve problems or accomplish tasks. You’ll learn how to design a program, develop the algorithms it needs, and write code to implement them. You will test program code, correct errors, and document and explain how your code works. </p>
 
         <p>This course prepares students to take the AP Computer Science A Exam. Students will exceed the 20-hour in-class programming requirement through dozens of smaller coding activities and several larger Java labs.</p>
         
@@ -171,15 +171,15 @@
     }
     var fontSizeIsLarge = false;
     function changeFontSize(){
-      //var ele = document.getElementById('demo');
+      var ele = document.getElementById('demo');
       if(!fontSizeIsLarge){
-        //ele.style.fontSize = "150%";
-        document.body.fontSize= "150%";
+        ele.style.fontSize = "150%";
+        //document.body.fontSize= "150%";
         fontSizeIsLarge = true;
       }
       else{
-        //ele.style.fontSize = "100%";
-        document.body.fontSize= "150%";
+        ele.style.fontSize = "100%";
+        //document.body.fontSize= "150%";
         fontSizeIsLarge = false;
       }  
     }

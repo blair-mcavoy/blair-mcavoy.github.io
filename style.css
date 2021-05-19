@@ -7,6 +7,12 @@ header {
 
 .collapse{
  display: none; 
+ padding: 10px;
+}
+
+.unit{
+  background: white;
+  padding: 10px;
 }
 
 iframe{

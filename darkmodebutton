@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
+    <link rel="stylesheet" href="style.css">
+    <title>AP Computer Science A</title>
+    <!--defines a title in the browser toolbar, provides a title for the page when it is added to favorites, displays a title for the page in search engine-results-->
+    <style>
+      body {
+        font-family: "Nunito Sans", serif;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header id="head"><h1>AP Computer Science A</h1><button class="button" onclick="changeFontSize();">Change font size</button><button class="button" onclick="DarkMode();">Dark Mode</button></header>
+    
+    <div class="row">
+      <div class="side">
+        <h2>Units</h2>
+          
+              <ul>
+                <li>Primitive Types</li>
+                <li>Using Objects </li>
+                <li>Boolean Expressions and if Statements </li>
+                <li> Iteration </li>
+                <li>Writing Classes</li>
+              </ul>
+
+      </div>  
+      
+      <div class="main">  <!--used to display a web page within a web page-->
+        <h2>Course Overview</h2>
+        <p>Go deep into the concepts and tools of object-oriented programming as you learn the Java programming language. You'll do hands-on work to design, write, and test computer programs that solve problems or accomplish tasks. You’ll learn how to design a program, develop the algorithms it needs, and write code to implement them. You will test program code, correct errors, and document and explain how your code works. </p>
+
+        <p>This course prepares students to take the AP Computer Science A Exam. Students will exceed the 20-hour in-class programming requirement through dozens of smaller coding activities and several larger Java labs.</p>
+        
+        <h2>Grading</h2>
+        <ul>
+          <li>In-class Activities <b>15%</b></li>
+          <li>Homework/Independent Work <b>15%</b></li>
+          <li> Unit Quizzes <b>20%</b></li>
+          <li> Labs <b>50%</b></li>
+        </ul> 
+      
+      </div>
+    </div>
+    <script>
+    function toggle(elementId) {
+      var ele = document.getElementById(elementId);
+      if(ele.style.display == "block") {
+         ele.style.display = "none";
+      }
+      else {
+        ele.style.display = "block";
+      }
+    }
+    var fontSizeIsLarge = false;
+    function changeFontSize(){
+      
+      if(!fontSizeIsLarge){
+        
+        document.body.style.fontSize= "150%";
+        fontSizeIsLarge = true;
+      }
+      else{
+        
+        document.body.style.fontSize= "100%";
+        fontSizeIsLarge = false;
+      }  
+    }
+
+    var dark = false;
+    function DarkMode(){
+      
+      if(!dark){
+        document.getElementById("head").style.backgroundColor = 'black';
+	document.querySelector('.main').style.backgroundColor = 'black';
+	document.querySelector('.side').style.backgroundColor = 'black';
+	document.body.style.color= "white";
+	dark = true;
+      }
+      else{
+	document.getElementById("head").style.backgroundColor = '#F4E285';
+	document.querySelector('.main').style.backgroundColor = '#F4A261';
+	document.querySelector('.side').style.backgroundColor = '#f1f1f1';
+	document.body.style.color= "black";
+        dark = false;
+      }  
+    }
+      
+      
+    </script>
+  </body>
+</html>
